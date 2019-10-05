@@ -1,2 +1,4 @@
 # AWS-HPC-Workshop-Extra
-Additional information for the AWS HPC Workshop
+Additional files to use for the AWS HPC Workshop.
+
+At present, this is primarily the workshop walkthrough written in Markdown as well as the images.
