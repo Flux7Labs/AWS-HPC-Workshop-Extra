@@ -1,18 +1,27 @@
 # AWS HPC Workshop
 ---
-## Log in to your Console
+## First, log in to your Console and see your Instances
+
+Under "Services", click "EC2".  You should see this:
+
+![Initial EC2 Instances](images/Console-1.png "Initial EC2 Instances")
+
+Take note of the instances that you have at the beginning of the exercise.
+
+### Next, get to your console through Cloud9
 1. Click "Services" and search for **Cloud9**
 
 ![Cloud9 menu](images/Cloud9.png "Cloud9")
 
 2.  Open the IDE
 
-(insert image of IDE button)
+![Cloud9 IDE](images/Cloud9-1.png "Cloud9 IDE")
+
 ##### Note:  You Must enable third party cookies in your browser for this to work properly
 
 Your screen will look like this:
 
-![Cloud9 IDE](images/Cloud9-1.png "Cloud9 IDE")
+![Cloud9 IDE](images/Cloud9-2.png "Cloud9 IDE")
 
 ## Set in to your Python Virtual Environment
 
@@ -83,7 +92,9 @@ job-ID  prior   name       user         state submit/start at     queue         
 
 ## Go back to the AWS Console and click EC2 and then Instances to see your intances spinning up
 
-![Cloud9 login](images/Cloud9-2.png "Cloud9 Login")
+Navigate from "Services" -> "EC2" -> "Instances"
+
+![Instances coming up](images/Console-2.png "Cloud9 Login")
 
 ## When your jobs are done, see the output files in your home directory:
 
@@ -151,7 +162,7 @@ Notice the speed of the writes to the FSx for Lustre partition.  FSx for Lustre 
 
 ![S3 Bucket](images/S3-1.png "S3 Bucket")
 
-## Use the provided script to write back the contents of your `/fsx` directory to S3
+### Use the provided script to write back the contents of your `/fsx` directory to S3
 ```
 [ec2-user@ip-10-0-1-224 AWS-HPC-Workshop]$ ls -al /fsx
 total 4133638
@@ -165,3 +176,5 @@ dr-xr-xr-x 28 root     root           4096 Oct  1 19:07 ..
 ## Now go back to your S3 bucket and look for the "workshop" folder
 
 ![S3 Bucket](images/S3-2.png "S3 Bucket")
+
+## That's it!  You can now log out of your lab account
